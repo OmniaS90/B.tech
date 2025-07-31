@@ -1,0 +1,110 @@
+{"level":30,"time":"2025-07-31T04:03:17.099Z","pid":8636,"hostname":"Omnia-Mahmoud","msg":"Listening on 127.0.0.1:63930"}
+(node:8636) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+{"level":30,"time":"2025-07-31T04:03:17.551Z","pid":8636,"hostname":"Omnia-Mahmoud","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2025-07-31T04:03:17.782Z","pid":8636,"hostname":"Omnia-Mahmoud","msg":"Adding browser to stack: chromium, version: 139.0.7258.5"}
+{"level":30,"time":"2025-07-31T04:03:17.783Z","pid":8636,"hostname":"Omnia-Mahmoud","msg":"End of node method newBrowser"}
+{"level":30,"time":"2025-07-31T04:03:17.783Z","pid":8636,"hostname":"Omnia-Mahmoud","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2025-07-31T04:03:17.831Z","pid":8636,"hostname":"Omnia-Mahmoud","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-31T04:03:17.832Z","pid":8636,"hostname":"Omnia-Mahmoud","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-31T04:03:17.837Z","pid":8636,"hostname":"Omnia-Mahmoud","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-31T04:03:17.837Z","pid":8636,"hostname":"Omnia-Mahmoud","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-31T04:03:17.846Z","pid":8636,"hostname":"Omnia-Mahmoud","msg":"Start of node method newContext"}
+{"level":30,"time":"2025-07-31T04:03:17.847Z","pid":8636,"hostname":"Omnia-Mahmoud","msg":"Creating new context with options: {\"acceptDownloads\":true,\"bypassCSP\":false,\"forcedColors\":\"none\",\"ignoreHTTPSErrors\":false,\"javaScriptEnabled\":true,\"offline\":false,\"reducedMotion\":\"no-preference\",\"serviceWorkers\":\"allow\",\"viewport\":null}"}
+{"level":30,"time":"2025-07-31T04:03:17.847Z","pid":8636,"hostname":"Omnia-Mahmoud","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@505c0bdc41c349a33c1dcf0f6eb3684a\"},\"headless\":false,\"_contextStack\":[],\"id\":\"browser=429d152e-8e55-41af-8f45-f7939fdc8aab\"}"}
+{"level":30,"time":"2025-07-31T04:03:17.847Z","pid":8636,"hostname":"Omnia-Mahmoud","msg":"Trace file: "}
+{"level":30,"time":"2025-07-31T04:03:17.860Z","pid":8636,"hostname":"Omnia-Mahmoud","msg":"Setting default timeout for context context=d71d1e17-61cd-450a-840b-68c84835c875 to 30000"}
+{"level":30,"time":"2025-07-31T04:03:17.861Z","pid":8636,"hostname":"Omnia-Mahmoud","msg":"End of node method newContext"}
+{"level":30,"time":"2025-07-31T04:03:17.860Z","pid":8636,"hostname":"Omnia-Mahmoud","msg":"Changed active context: context=d71d1e17-61cd-450a-840b-68c84835c875"}
+{"level":30,"time":"2025-07-31T04:03:17.866Z","pid":8636,"hostname":"Omnia-Mahmoud","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-07-31T04:03:17.866Z","pid":8636,"hostname":"Omnia-Mahmoud","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@505c0bdc41c349a33c1dcf0f6eb3684a\"},\"headless\":false,\"_contextStack\":[{\"id\":\"context=d71d1e17-61cd-450a-840b-68c84835c875\",\"c\":{\"_type\":\"BrowserContext\",\"_guid\":\"browser-context@e04e244a92cf289563bd6489c344a8df\"},\"pageStack\":[],\"options\":{\"acceptDownloads\":true,\"bypassCSP\":false,\"forcedColors\":\"none\",\"ignoreHTTPSErrors\":false,\"javaScriptEnabled\":true,\"offline\":false,\"reducedMotion\":\"no-preference\",\"serviceWorkers\":\"allow\",\"viewport\":null},\"traceFile\":\"\"}],\"id\":\"browser=429d152e-8e55-41af-8f45-f7939fdc8aab\"}"}
+{"level":30,"time":"2025-07-31T04:03:17.996Z","pid":8636,"hostname":"Omnia-Mahmoud","msg":"Video path: undefined"}
+{"level":30,"time":"2025-07-31T04:03:17.996Z","pid":8636,"hostname":"Omnia-Mahmoud","msg":"Changed active page"}
+{"level":30,"time":"2025-07-31T04:03:25.721Z","pid":8636,"hostname":"Omnia-Mahmoud","msg":"End of node method newPage"}
+{"level":30,"time":"2025-07-31T04:03:25.728Z","pid":8636,"hostname":"Omnia-Mahmoud","msg":"Start of node method getElement"}
+{"level":30,"time":"2025-07-31T04:03:25.729Z","pid":8636,"hostname":"Omnia-Mahmoud","msg":"Strict mode is enabled, find Locator with xpath=//input[@id=\"search\"] in page."}
+{"level":30,"time":"2025-07-31T04:03:25.764Z","pid":8636,"hostname":"Omnia-Mahmoud","msg":"End of node method getElement"}
+{"level":30,"time":"2025-07-31T04:03:25.770Z","pid":8636,"hostname":"Omnia-Mahmoud","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-07-31T04:03:25.770Z","pid":8636,"hostname":"Omnia-Mahmoud","msg":"Strict mode is enabled, find Locator with xpath=//input[@id=\"search\"] in page."}
+{"level":30,"time":"2025-07-31T04:03:25.795Z","pid":8636,"hostname":"Omnia-Mahmoud","msg":"End of node method fillText"}
+{"level":30,"time":"2025-07-31T04:03:25.800Z","pid":8636,"hostname":"Omnia-Mahmoud","msg":"Start of node method click"}
+{"level":30,"time":"2025-07-31T04:03:25.800Z","pid":8636,"hostname":"Omnia-Mahmoud","msg":"Strict mode is enabled, find Locator with xpath=//div[@class=\"actions\"]//button[@type=\"submit\"] in page."}
+{"level":30,"time":"2025-07-31T04:03:26.095Z","pid":8636,"hostname":"Omnia-Mahmoud","msg":"End of node method click"}
+{"level":30,"time":"2025-07-31T04:03:26.104Z","pid":8636,"hostname":"Omnia-Mahmoud","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-07-31T04:03:26.104Z","pid":8636,"hostname":"Omnia-Mahmoud","msg":"Strict mode is enabled, find Locator with (//img[@class=\"product-image-photo\"])[1] in page."}
+{"level":30,"time":"2025-07-31T04:03:26.190Z","pid":8636,"hostname":"Omnia-Mahmoud","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-07-31T04:03:29.196Z","pid":8636,"hostname":"Omnia-Mahmoud","msg":"Start of node method evaluateJavascript"}
+{"level":30,"time":"2025-07-31T04:03:29.200Z","pid":8636,"hostname":"Omnia-Mahmoud","msg":"End of node method evaluateJavascript"}
+{"level":30,"time":"2025-07-31T04:03:29.201Z","pid":8636,"hostname":"Omnia-Mahmoud","msg":"Start of node method evaluateJavascript"}
+{"level":30,"time":"2025-07-31T04:03:29.202Z","pid":8636,"hostname":"Omnia-Mahmoud","msg":"End of node method evaluateJavascript"}
+{"level":30,"time":"2025-07-31T04:03:29.203Z","pid":8636,"hostname":"Omnia-Mahmoud","msg":"Start of node method evaluateJavascript"}
+{"level":30,"time":"2025-07-31T04:03:29.205Z","pid":8636,"hostname":"Omnia-Mahmoud","msg":"End of node method evaluateJavascript"}
+{"level":30,"time":"2025-07-31T04:03:29.206Z","pid":8636,"hostname":"Omnia-Mahmoud","msg":"Start of node method evaluateJavascript"}
+{"level":30,"time":"2025-07-31T04:03:29.207Z","pid":8636,"hostname":"Omnia-Mahmoud","msg":"End of node method evaluateJavascript"}
+{"level":30,"time":"2025-07-31T04:03:29.208Z","pid":8636,"hostname":"Omnia-Mahmoud","msg":"Start of node method evaluateJavascript"}
+{"level":30,"time":"2025-07-31T04:03:29.209Z","pid":8636,"hostname":"Omnia-Mahmoud","msg":"End of node method evaluateJavascript"}
+{"level":30,"time":"2025-07-31T04:03:29.211Z","pid":8636,"hostname":"Omnia-Mahmoud","msg":"Start of node method click"}
+{"level":30,"time":"2025-07-31T04:03:29.211Z","pid":8636,"hostname":"Omnia-Mahmoud","msg":"Strict mode is enabled, find Locator with xpath=(//img[@class=\"product-image-photo\"])[1] in page."}
+{"level":30,"time":"2025-07-31T04:03:29.501Z","pid":8636,"hostname":"Omnia-Mahmoud","msg":"End of node method click"}
+{"level":30,"time":"2025-07-31T04:03:29.506Z","pid":8636,"hostname":"Omnia-Mahmoud","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-07-31T04:03:29.506Z","pid":8636,"hostname":"Omnia-Mahmoud","msg":"Strict mode is enabled, find Locator with css=img.no-sirv-lazy-load[itemprop=\"image\"] >> nth=0 in page."}
+{"level":30,"time":"2025-07-31T04:03:29.903Z","pid":8636,"hostname":"Omnia-Mahmoud","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-07-31T04:03:29.907Z","pid":8636,"hostname":"Omnia-Mahmoud","msg":"Start of node method getElementAttribute"}
+{"level":30,"time":"2025-07-31T04:03:29.907Z","pid":8636,"hostname":"Omnia-Mahmoud","msg":"Strict mode is enabled, find Locator with css=img.no-sirv-lazy-load[itemprop=\"image\"] >> nth=0 in page."}
+{"level":30,"time":"2025-07-31T04:03:29.969Z","pid":8636,"hostname":"Omnia-Mahmoud","msg":"Retrieved attribute for element css=img.no-sirv-lazy-load[itemprop=\"image\"] >> nth=0 containing https://btech.com/media/catalog/product/cache/22b1bed05f04d71c4a848d770186c3c4/7/6/7685fd02f3ae28b54f01424731bd233db6d5f4d5eef724485d9a8e5665537ae1_1.webp"}
+{"level":30,"time":"2025-07-31T04:03:29.969Z","pid":8636,"hostname":"Omnia-Mahmoud","msg":"End of node method getElementAttribute"}
+{"level":30,"time":"2025-07-31T04:03:29.975Z","pid":8636,"hostname":"Omnia-Mahmoud","msg":"Start of node method getText"}
+{"level":30,"time":"2025-07-31T04:03:29.975Z","pid":8636,"hostname":"Omnia-Mahmoud","msg":"Strict mode is enabled, find Locator with //span[@class=\"price\"] >> nth=0 in page."}
+{"level":30,"time":"2025-07-31T04:03:30.451Z","pid":8636,"hostname":"Omnia-Mahmoud","msg":"Retrieved text for element //span[@class=\"price\"] >> nth=0 containing 55,500"}
+{"level":30,"time":"2025-07-31T04:03:30.451Z","pid":8636,"hostname":"Omnia-Mahmoud","msg":"End of node method getText"}
+{"level":30,"time":"2025-07-31T04:03:30.461Z","pid":8636,"hostname":"Omnia-Mahmoud","msg":"Start of node method handleAlert"}
+{"level":30,"time":"2025-07-31T04:03:30.462Z","pid":8636,"hostname":"Omnia-Mahmoud","msg":"End of node method handleAlert"}
+{"level":30,"time":"2025-07-31T04:03:33.471Z","pid":8636,"hostname":"Omnia-Mahmoud","msg":"Start of node method click"}
+{"level":30,"time":"2025-07-31T04:03:33.471Z","pid":8636,"hostname":"Omnia-Mahmoud","msg":"Strict mode is enabled, find Locator with xpath=//button[@id=\"product-addtocart-button\"] in page."}
+{"level":30,"time":"2025-07-31T04:03:33.580Z","pid":8636,"hostname":"Omnia-Mahmoud","msg":"End of node method click"}
+{"level":30,"time":"2025-07-31T04:03:33.586Z","pid":8636,"hostname":"Omnia-Mahmoud","msg":"Start of node method click"}
+{"level":30,"time":"2025-07-31T04:03:33.586Z","pid":8636,"hostname":"Omnia-Mahmoud","msg":"Strict mode is enabled, find Locator with xpath=//button[@class=\"btn-common btn-regular medium super go-to-cart-btn\"] in page."}
+{"level":30,"time":"2025-07-31T04:03:35.948Z","pid":8636,"hostname":"Omnia-Mahmoud","msg":"End of node method click"}
+{"level":30,"time":"2025-07-31T04:03:35.954Z","pid":8636,"hostname":"Omnia-Mahmoud","msg":"Strict mode is enabled, find Locator with //p[@class=\"price-large-static\"]//span[@class=\"price\"] in page."}
+{"level":30,"time":"2025-07-31T04:03:35.954Z","pid":8636,"hostname":"Omnia-Mahmoud","msg":"Start of node method getText"}
+{"level":30,"time":"2025-07-31T04:03:36.199Z","pid":8636,"hostname":"Omnia-Mahmoud","msg":"Retrieved text for element //p[@class=\"price-large-static\"]//span[@class=\"price\"] containing 55,500 جنيه"}
+{"level":30,"time":"2025-07-31T04:03:36.199Z","pid":8636,"hostname":"Omnia-Mahmoud","msg":"End of node method getText"}
+{"level":30,"time":"2025-07-31T04:03:36.206Z","pid":8636,"hostname":"Omnia-Mahmoud","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-31T04:03:36.225Z","pid":8636,"hostname":"Omnia-Mahmoud","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-31T04:03:36.227Z","pid":8636,"hostname":"Omnia-Mahmoud","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2025-07-31T04:03:36.228Z","pid":8636,"hostname":"Omnia-Mahmoud","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2025-07-31T04:03:36.230Z","pid":8636,"hostname":"Omnia-Mahmoud","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-31T04:03:36.243Z","pid":8636,"hostname":"Omnia-Mahmoud","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-31T04:03:36.246Z","pid":8636,"hostname":"Omnia-Mahmoud","msg":"Changing current active page: page=d9cfc313-881d-4887-872d-c8880525f0d8"}
+{"level":30,"time":"2025-07-31T04:03:36.246Z","pid":8636,"hostname":"Omnia-Mahmoud","msg":"Changed active page"}
+{"level":30,"time":"2025-07-31T04:03:36.249Z","pid":8636,"hostname":"Omnia-Mahmoud","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-31T04:03:36.261Z","pid":8636,"hostname":"Omnia-Mahmoud","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-31T04:03:36.264Z","pid":8636,"hostname":"Omnia-Mahmoud","msg":"Changed active context: context=d71d1e17-61cd-450a-840b-68c84835c875"}
+{"level":30,"time":"2025-07-31T04:03:36.264Z","pid":8636,"hostname":"Omnia-Mahmoud","msg":"Changing current active page: page=d9cfc313-881d-4887-872d-c8880525f0d8"}
+{"level":30,"time":"2025-07-31T04:03:36.264Z","pid":8636,"hostname":"Omnia-Mahmoud","msg":"Changed active page"}
+{"level":30,"time":"2025-07-31T04:03:36.266Z","pid":8636,"hostname":"Omnia-Mahmoud","msg":"Start of node method closeContext"}
+{"level":30,"time":"2025-07-31T04:03:36.290Z","pid":8636,"hostname":"Omnia-Mahmoud","msg":"Removed page=adb20b56-d3f8-42de-91ee-0317ad2ce351 from context=d71d1e17-61cd-450a-840b-68c84835c875 page stack"}
+{"level":30,"time":"2025-07-31T04:03:36.311Z","pid":8636,"hostname":"Omnia-Mahmoud","msg":"End of node method closeContext"}
+{"level":30,"time":"2025-07-31T04:03:36.319Z","pid":8636,"hostname":"Omnia-Mahmoud","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-31T04:03:36.319Z","pid":8636,"hostname":"Omnia-Mahmoud","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-31T04:03:36.323Z","pid":8636,"hostname":"Omnia-Mahmoud","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-31T04:03:36.323Z","pid":8636,"hostname":"Omnia-Mahmoud","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-31T04:03:36.328Z","pid":8636,"hostname":"Omnia-Mahmoud","msg":"Start of node method closeBrowser"}
+{"level":30,"time":"2025-07-31T04:03:36.522Z","pid":8636,"hostname":"Omnia-Mahmoud","msg":"End of node method closeBrowser"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (C:\Users\omnia.mahmoud\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\index.js:12227:15)
+    at PlaywrightServer.getActiveBrowser (C:\Users\omnia.mahmoud\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\index.js:13124:59)
+    at PlaywrightServer.setTimeout (C:\Users\omnia.mahmoud\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\index.js:13372:57)
+    at Object.onReceiveHalfClose (C:\Users\omnia.mahmoud\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1461:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\omnia.mahmoud\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:575:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\omnia.mahmoud\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:615:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\omnia.mahmoud\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:382:18)
+    at ServerHttp2Stream.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+=============================================================
+{"level":30,"time":"2025-07-31T04:03:36.527Z","pid":8636,"hostname":"Omnia-Mahmoud","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-31T04:03:36.527Z","pid":8636,"hostname":"Omnia-Mahmoud","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-31T04:03:36.566Z","pid":8636,"hostname":"Omnia-Mahmoud","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2025-07-31T04:03:36.566Z","pid":8636,"hostname":"Omnia-Mahmoud","msg":"End of node method closeAllBrowsers"}

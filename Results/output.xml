@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.13.5 on win32)" generated="2025-07-31T07:03:16.224001" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="C:\Users\omnia.mahmoud\Desktop\B.tech\Tests">
+<kw name="Run Keywords" owner="BuiltIn" type="SETUP">
+<kw name="New Browser" owner="Browser">
+<msg time="2025-07-31T07:03:16.440406" level="INFO">{"browser": "chromium", "headless": false, "args": ["--start-maximized"], "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\omnia.mahmoud\\Desktop\\B.tech\\Results\\browser\\traces\\temp\\00502f5e-1f0d-464b-aab7-5b0028539794"}</msg>
+<msg time="2025-07-31T07:03:16.467000" level="INFO">Starting Browser process C:\Users\omnia.mahmoud\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\index.js using at 127.0.0.1:63930</msg>
+<msg time="2025-07-31T07:03:17.784978" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"args":["--start-maximized"],"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\omnia.mahmoud\\Desktop\\B.tech\\Results\\browser\\traces\\temp\\00502f5e-1f0d-464b-aab7-5b0028539794"}</msg>
+<arg>browser=${BROWSER}</arg>
+<arg>headless=${HEADLESS}</arg>
+<arg>args=['--start-maximized']</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-07-31T07:03:16.439667" elapsed="1.345586"/>
+</kw>
+<kw name="Set Browser Timeout" owner="Browser">
+<arg>0.5m</arg>
+<tag>Config</tag>
+<tag>Setter</tag>
+<doc>Sets the timeout used by most input and getter keywords.</doc>
+<status status="PASS" start="2025-07-31T07:03:17.785647" elapsed="0.005220"/>
+</kw>
+<arg>New Browser</arg>
+<arg>browser=${BROWSER}</arg>
+<arg>headless=${HEADLESS}</arg>
+<arg>args=['--start-maximized']</arg>
+<arg>AND</arg>
+<arg>Set Browser Timeout</arg>
+<arg>0.5m</arg>
+<doc>Executes all the given keywords in a sequence.</doc>
+<status status="PASS" start="2025-07-31T07:03:16.439320" elapsed="1.351752"/>
+</kw>
+<suite id="s1-s1" name="SearchItem" source="C:\Users\omnia.mahmoud\Desktop\B.tech\Tests\SearchItem.robot">
+<test id="s1-s1-t1" name="Add element to cart" line="20">
+<kw name="New Context" owner="Browser" type="SETUP">
+<msg time="2025-07-31T07:03:17.843964" level="INFO">{
+  "acceptDownloads": true,
+  "bypassCSP": false,
+  "forcedColors": "none",
+  "ignoreHTTPSErrors": false,
+  "javaScriptEnabled": true,
+  "offline": false,
+  "reducedMotion": "no-preference",
+  "serviceWorkers": "allow",
+  "viewport": null
+}</msg>
+<msg time="2025-07-31T07:03:17.862376" level="INFO">Successfully created context. </msg>
+<msg time="2025-07-31T07:03:17.862433" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': None}</msg>
+<arg>viewport=None</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new BrowserContext with specified options.</doc>
+<status status="PASS" start="2025-07-31T07:03:17.839546" elapsed="0.023001"/>
+</kw>
+<kw name="Open B.tech website" owner="DashBoard">
+<kw name="New Page" owner="Browser">
+<msg time="2025-07-31T07:03:25.724499" level="INFO">Successfully initialized new page object and opened url: https://btech.com/</msg>
+<arg>${Base_URL}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2025-07-31T07:03:17.863421" elapsed="7.861467"/>
+</kw>
+<kw name="Get Element" owner="Browser">
+<msg time="2025-07-31T07:03:25.765750" level="INFO">Locator found successfully.</msg>
+<arg>xpath=${searchTxtBx}</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
+<status status="PASS" start="2025-07-31T07:03:25.725194" elapsed="0.040808"/>
+</kw>
+<status status="PASS" start="2025-07-31T07:03:17.863072" elapsed="7.903103"/>
+</kw>
+<kw name="Search item" owner="DashBoard">
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-07-31T07:03:25.767865" level="INFO">Fills the text 'iphone 16' in the given field.</msg>
+<arg>xpath=${searchTxtBx}</arg>
+<arg>${item}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-07-31T07:03:25.767116" elapsed="0.030323"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-07-31T07:03:25.798663" level="INFO">Clicks the element 'xpath=//div[@class="actions"]//button[@type="submit"]'.</msg>
+<arg>xpath=${searchBtn}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-07-31T07:03:25.797617" elapsed="0.301303"/>
+</kw>
+<arg>${item}</arg>
+<status status="PASS" start="2025-07-31T07:03:25.766739" elapsed="0.332329"/>
+</kw>
+<kw name="Select the first search result" owner="DashBoard">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-07-31T07:03:26.192218" level="INFO">Waited for Element with selector (//img[@class="product-image-photo"])[1] at state visible</msg>
+<arg>${searchedItem}</arg>
+<arg>visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-07-31T07:03:26.100594" elapsed="0.091918"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-07-31T07:03:29.193770" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-07-31T07:03:26.192746" elapsed="3.001133"/>
+</kw>
+<kw name="Scroll To" owner="Browser">
+<msg time="2025-07-31T07:03:29.203111" level="INFO">JavaScript executed successfully.</msg>
+<msg time="2025-07-31T07:03:29.203151" level="INFO">JavaScript executed successfully.</msg>
+<msg time="2025-07-31T07:03:29.207562" level="INFO">JavaScript executed successfully.</msg>
+<msg time="2025-07-31T07:03:29.207602" level="INFO">JavaScript executed successfully.</msg>
+<msg time="2025-07-31T07:03:29.209875" level="INFO">JavaScript executed successfully.</msg>
+<arg>vertical=top</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Scrolls an element or the page to an absolute position based on given coordinates.</doc>
+<status status="PASS" start="2025-07-31T07:03:29.194026" elapsed="0.016015"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-07-31T07:03:29.211026" level="INFO">Clicks the element 'xpath=(//img[@class="product-image-photo"])[1]'.</msg>
+<arg>xpath=${searchedItem}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-07-31T07:03:29.210190" elapsed="0.292626"/>
+</kw>
+<status status="PASS" start="2025-07-31T07:03:26.099770" elapsed="3.403167"/>
+</kw>
+<kw name="assert item has an image" owner="ItemPage">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-07-31T07:03:29.904736" level="INFO">Waited for Element with selector css=img.no-sirv-lazy-load[itemprop="image"] &gt;&gt; nth=0 at state visible</msg>
+<arg>css=img.no-sirv-lazy-load[itemprop="image"] &gt;&gt; nth=0</arg>
+<arg>visible</arg>
+<arg>timeout=10s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-07-31T07:03:29.504047" elapsed="0.400904"/>
+</kw>
+<kw name="Get Attribute" owner="Browser">
+<msg time="2025-07-31T07:03:29.970089" level="INFO">Attribute is: 'https://btech.com/media/catalog/product/cache/22b1bed05f04d71c4a848d770186c3c4/7/6/7685fd02f3ae28b54f01424731bd233db6d5f4d5eef724485d9a8e5665537ae1_1.webp'</msg>
+<msg time="2025-07-31T07:03:29.970327" level="INFO">${src} = https://btech.com/media/catalog/product/cache/22b1bed05f04d71c4a848d770186c3c4/7/6/7685fd02f3ae28b54f01424731bd233db6d5f4d5eef724485d9a8e5665537ae1_1.webp</msg>
+<var>${src}</var>
+<arg>css=img.no-sirv-lazy-load[itemprop="image"] &gt;&gt; nth=0</arg>
+<arg>src</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the HTML ``attribute`` of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-07-31T07:03:29.905160" elapsed="0.065402"/>
+</kw>
+<kw name="Should Not Be Empty" owner="BuiltIn">
+<msg time="2025-07-31T07:03:29.971489" level="INFO">Length is 154.</msg>
+<arg>${src}</arg>
+<doc>Verifies that the given item is not empty.</doc>
+<status status="PASS" start="2025-07-31T07:03:29.970755" elapsed="0.000844"/>
+</kw>
+<status status="PASS" start="2025-07-31T07:03:29.503445" elapsed="0.468354"/>
+</kw>
+<kw name="Extract item's price" owner="ItemPage">
+<kw name="Get Text" owner="Browser">
+<msg time="2025-07-31T07:03:30.452725" level="INFO">Text: '55,500'</msg>
+<msg time="2025-07-31T07:03:30.452945" level="INFO">${price} = 55,500</msg>
+<var>${price}</var>
+<arg>${priceLbl} &gt;&gt; nth=0</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-07-31T07:03:29.973239" elapsed="0.479744"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-07-31T07:03:30.454268" level="INFO">${digitsOnly} = 55500</msg>
+<var>${digitsOnly}</var>
+<arg>''.join(filter(str.isdigit, '''${price}'''))</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-07-31T07:03:30.453200" elapsed="0.001124"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${digitsOnly}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-31T07:03:30.454522" elapsed="0.001260"/>
+</kw>
+<return>
+<value>${digitsOnly}</value>
+<status status="PASS" start="2025-07-31T07:03:30.455871" elapsed="0.000178"/>
+</return>
+<msg time="2025-07-31T07:03:30.456241" level="INFO">${price} = 55500</msg>
+<var>${price}</var>
+<status status="PASS" start="2025-07-31T07:03:29.972367" elapsed="0.483904"/>
+</kw>
+<kw name="Add item to chart" owner="ItemPage">
+<kw name="Handle Future Dialogs" owner="Browser">
+<arg>action=accept</arg>
+<tag>PageContent</tag>
+<doc>Handle next dialog on page with ``action``.</doc>
+<status status="PASS" start="2025-07-31T07:03:30.456965" elapsed="0.007749"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-07-31T07:03:33.467527" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-07-31T07:03:30.465308" elapsed="3.002517"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-07-31T07:03:33.469107" level="INFO">Clicks the element 'xpath=//button[@id="product-addtocart-button"]'.</msg>
+<arg>xpath=${addToChartBtn}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-07-31T07:03:33.468036" elapsed="0.113754"/>
+</kw>
+<status status="PASS" start="2025-07-31T07:03:30.456651" elapsed="3.125325"/>
+</kw>
+<kw name="Navigate to chart" owner="ItemPage">
+<kw name="Click" owner="Browser">
+<msg time="2025-07-31T07:03:33.584433" level="INFO">Clicks the element 'xpath=//button[@class="btn-common btn-regular medium super go-to-cart-btn"]'.</msg>
+<arg>xpath=${chartBtn}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-07-31T07:03:33.583082" elapsed="2.366280"/>
+</kw>
+<status status="PASS" start="2025-07-31T07:03:33.582502" elapsed="2.366978"/>
+</kw>
+<kw name="Assert that price is correct" owner="Chart">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${price}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-31T07:03:35.950540" elapsed="0.000998"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-07-31T07:03:36.200307" level="INFO">Text: '55,500 جنيه'</msg>
+<msg time="2025-07-31T07:03:36.200485" level="INFO">${actualPrice} = 55,500 جنيه</msg>
+<var>${actualPrice}</var>
+<arg>${actualPriceLbl}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-07-31T07:03:35.951697" elapsed="0.248825"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-07-31T07:03:36.201618" level="INFO">${digitsOnly} = 55500</msg>
+<var>${digitsOnly}</var>
+<arg>''.join(filter(str.isdigit, '''${actualPrice}'''))</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-07-31T07:03:36.200681" elapsed="0.000970"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${digitsOnly}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-07-31T07:03:36.201819" elapsed="0.000670"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${price}</arg>
+<arg>${digitsOnly}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2025-07-31T07:03:36.202607" elapsed="0.000485"/>
+</kw>
+<arg>${price}</arg>
+<status status="PASS" start="2025-07-31T07:03:35.950013" elapsed="0.253217"/>
+</kw>
+<kw name="Close Context" owner="Browser" type="TEARDOWN">
+<msg time="2025-07-31T07:03:36.226571" level="INFO">Switching browser to CURRENT</msg>
+<msg time="2025-07-31T07:03:36.229455" level="INFO">Returned active browser id. CURRENT</msg>
+<msg time="2025-07-31T07:03:36.244525" level="INFO">Switching context to CURRENT in CURRENT</msg>
+<msg time="2025-07-31T07:03:36.247938" level="INFO">Returned active context id: CURRENT</msg>
+<msg time="2025-07-31T07:03:36.248492" level="INFO">Switching context to context=d71d1e17-61cd-450a-840b-68c84835c875 in CURRENT</msg>
+<msg time="2025-07-31T07:03:36.266264" level="INFO">Successfully changed active context: context=d71d1e17-61cd-450a-840b-68c84835c875</msg>
+<msg time="2025-07-31T07:03:36.313091" level="INFO">Successfully closed Context</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes a Context.</doc>
+<status status="PASS" start="2025-07-31T07:03:36.203728" elapsed="0.109703"/>
+</kw>
+<tag>SearchItem</tag>
+<timeout value="30 seconds"/>
+<status status="PASS" start="2025-07-31T07:03:17.834013" elapsed="18.479781"/>
+</test>
+<status status="PASS" start="2025-07-31T07:03:17.791220" elapsed="18.529934"/>
+</suite>
+<kw name="Close Browser" owner="Browser" type="TEARDOWN">
+<msg time="2025-07-31T07:03:36.523118" level="INFO">Closed browser</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-07-31T07:03:36.325197" elapsed="0.198082"/>
+</kw>
+<status status="PASS" start="2025-07-31T07:03:16.225301" elapsed="20.298048"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">SearchItem</stat>
+</tag>
+<suite>
+<stat name="Tests" id="s1" pass="1" fail="0" skip="0">Tests</stat>
+<stat name="SearchItem" id="s1-s1" pass="1" fail="0" skip="0">Tests.SearchItem</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
